@@ -23,4 +23,16 @@ The dashboard itself was designed to be accessible to people of diverse abilitie
 - the "colorblind" palette on Tableau was chosen, where possible, for visualizations.
 - the main color schemes utilized shades of blue, orange, and gray.
 - all visualizations are supported with detailed tooltips providing the same information in text format to offer an alternative option to color for distinguishing data
-- straightforward language and expression of data were used.
+- straightforward language and expression of data were used. <br>
+<br>
+<br>
+<b> This is a second, similar dashboard I created exploring relationships between hospital rating and readmission rates within the fictitious hospital system in the United States.</b><br>
+<br>Data used for this dashboard were obtained from 2 different sources: a medical_data database provided by Western Governors University, and accessed through pgAdmin (PostgreSQL), and an add-on csv file obtained from Kaggle.com.<br>
+The add-on csv was added to the medical_data database after it had been cleaned to remove unnecessary columns and records containing null values.<br><br>
+a.	To create the dashboard, first the add on csv was loaded into the medical_data database using pgAdmin/PostgreSQL. A create table script was written designating the name of each column in the table, along with the appropriate data type. Then the csv was imported into the table using the table’s menu. Then, within the ERD, the new table, hospital_general_info was related to the location table through the zip code columns.
+b.	Within Tableau, only 3 tables from the database were needed to create the dashboard: the patient table, location table, and hospital_general_info table. The location table was inner-joined on the patient table. The hospital_general_info table was inner-joined on the location table. The SQL scripts used for this process can be examined in Tableau.<br>
+https://public.tableau.com/app/profile/courtney.fuller1893/viz/HospitalReadmissionRatesByMetric/ReadmissionDashboard?publish=yes <br>
+<img width="747" alt="image" src="https://github.com/cfuller19/cfuller19-patient_dashboard/assets/101231073/863790af-d06a-4f2f-b246-e774496410c7">
+
+
+
